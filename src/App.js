@@ -16,7 +16,7 @@ function App() {
         videoDescription = {'Nesse vídeo Sweet Carol explica um pouco do seu trabalho com os vídeos de ASMR, o que significa essa técnica, os benefícios que ela pode trazer baseado em depoimentos e também aborda um pouco sobre barreiras do preconceito que a técnica enfrenta em alguns momentos, inclusive sobre a sexualização do ASMR e seu ponto de vista!'}
       />
       <Carousel
-        ignoreFirsVideo
+        ignoreFirstVideo
         category = {dadosIniciais.categorias[0]}
       />
       <Carousel
