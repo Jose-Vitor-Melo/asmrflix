@@ -2,68 +2,72 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../../components/PageDefault';
 import FormField from '../../../../components/FormField';
+import Button from '../../../../components/Button';
 
-function CadastroCategoria(){
+function CadastroCategoria() {
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '',
+  };
 
-    const valoresIniciais = {
-        nome: '',
-        descricao: '',
-        cor: '',
-    }
+  const [categorias, setCategorias] = useState([]);
 
-    const [categorias, setCategorias] = useState([])
+  const [values, setValues] = useState(valoresIniciais);
 
-    const [values, setValues] = useState(valoresIniciais)
+  function setValue(key, value) {
+    setValues({
+      ...values,
+      [key]: value,
+    });
+  }
 
-    function setValue(key, value) {
-        setValues({
-            ...values,
-            [key]: value
-        })
-    }
+  function handlerSubmit(infOfEvent) {
+    infOfEvent.preventDefault();
+    setCategorias([
+      ...categorias,
+      values,
+    ]);
+    setValue(valoresIniciais);
+  }
+  function handlerChange(infOfEvent) {
+    setValue(
+      infOfEvent.target.getAttribute('name'),
+      infOfEvent.target.value,
+    );
+  }
 
-    function handlerSubmit(infOfEvent) {
-        infOfEvent.preventDefault()
-        setCategorias([
-            ...categorias,
-            values
-        ])
-        setValue(valoresIniciais)
-    }
-    function handlerChange(infOfEvent){
-        const {getAttribute, value} = infOfEvent.target
-        setValue(getAttribute('name'), value)
-    }
-    
-    return(
+  return (
     <PageDefault>
-        <h1>Cadastro de Categoria: {values.nome}</h1>
+      <h1>
+        Cadastro de Categoria:
+        {values.nome}
+      </h1>
 
-        <form onSubmit={handlerSubmit}>
-            <FormField label='Nome da Categoria:'value={values.nome} onChange={handlerChange} type='text' name='nome' />
-            <FormField label='Descrição:' value={values.descricao} onChange={handlerChange} type='text' name='descricao' />
-            <FormField label='cor:' value={values.cor} onChange={handlerChange} type='color' name='nome' />
-            
-            <button>
-                Cadastrar
-            </button>
-        </form>
+      <form onSubmit={handlerSubmit}>
+        <FormField label="Nome da Categoria" value={values.nome} onChange={handlerChange} type="text" name="nome" />
+        <FormField label="Descrição" value={values.descricao} onChange={handlerChange} type="textarea" name="descricao" />
+        <FormField label="cor" value={values.cor} onChange={handlerChange} type="color" name="cor" />
 
-        <ul>
-            {categorias.map((categoria, indice) => {
-                return(
-                    <li key={`${categoria}${indice}`}>
-                        {categoria.nome}
-                    </li>
-                )
-            })}
-        </ul>
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
 
-        <Link to='/'>
-            Ir para home
-        </Link>
+      <ul>
+        {categorias.map((categoria, indice) => (
+          // eslint-disable-next-line react/no-array-index-key
+          <li key={`${categoria}${indice}`}>
+            {categoria.nome}
+          </li>
+        ))}
+      </ul>
+
+      <Link to="/">
+        Ir para home
+      </Link>
     </PageDefault>
-    )
+  );
 }
 
 export default CadastroCategoria;
