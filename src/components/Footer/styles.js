@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
-
-export const FooterBase = styled.footer`
+const FooterBase = styled.footer`
+  img {
+    width: min(250px, 100%);
+  }
   background: var(--black);
   border-top: 2px solid var(--primary);
   padding-left: 16px;
@@ -14,3 +16,5 @@ export const FooterBase = styled.footer`
     margin-bottom: 50px;
   }
 `;
+
+export default FooterBase;

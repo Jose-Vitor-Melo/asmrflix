@@ -36,133 +36,133 @@
     "videos": [
         {
             "id": 1,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "O QUE É ASMR? - Todos sentem?",
             "url": "https://www.youtube.com/watch?v=SnioXYXp33s"
         },
         {
             "id": 2,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR ESSE VÍDEO FARÁ SEUS OLHOS PESAREM",
             "url": "https://www.youtube.com/watch?v=0hirBMy7420"
         },
         {
             "id": 3,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR - BANHO RELAXANTE (sons em camadas)",
             "url": "https://www.youtube.com/watch?v=pZK5wqODQJ4"
         },
         {
             "id": 4,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR NEXT LEVEL for Brain Melting Tingles and Deep Sleep",
             "url": "https://www.youtube.com/watch?v=MBRihNZGzA0"
         },
         {
             "id": 5,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR 3DIO: PURIFICANDO SEU CÉREBRO 🧠 SUSSURROS PARA RELAXAR E DORMIR EM 20 MINUTOS! SONO RESTAURADOR",
             "url": "https://www.youtube.com/watch?v=e8psiuEKako"
         },
         {
             "id": 6,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "UM ASMRTIST REAGINDO A TIKTOKS EM ASMR",
             "url": "https://www.youtube.com/watch?v=q_RDT4E063c"
         },
         {
             "id": 7,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR: VOCÊ VAI DORMIR EM 15 MINUTOS COM ESSE VÍDEO",
             "url": "https://www.youtube.com/watch?v=XFH6MbLs9Tg"
         },
         {
             "id": 8,
-            "categoriaID": 1,
+            "categoriaId": 1,
             "titulo": "ASMR: ELIMINANDO SUA ENERGIA NEGATIVA!",
             "url": "https://www.youtube.com/watch?v=3RoBIvmXmtE&t=128s"
         },
         {
             "id": 9,
-            "categoriaID": 2,
+            "categoriaId": 2,
             "titulo": "ASMR BARBIE COLOR REVEAL FASHION",
             "url": "https://www.youtube.com/watch?v=DKPjRogSqvo"
         },
         {
             "id": 10,
-            "categoriaID": 2,
+            "categoriaId": 2,
             "titulo": "ASMR - UNBOXING DE ROUPAS (Yoins)",
             "url": "https://www.youtube.com/watch?v=wF_9JAYtv8w"
         },
         {
             "id": 11,
-            "categoriaID": 2,
+            "categoriaId": 2,
             "titulo": "ASMR BINAURAL ROLEPLAY - DARK",
             "url": "https://www.youtube.com/watch?v=KTMLrlsC98A"
         },
         {
             "id": 12,
-            "categoriaID": 2,
+            "categoriaId": 2,
             "titulo": "ASMR: ELIMINANDO SUA ENERGIA NEGATIVA!",
             "url": "https://www.youtube.com/watch?v=3RoBIvmXmtE&t=128s"
         },
         {
             "id": 13,
-            "categoriaID": 2,
+            "categoriaId": 2,
             "titulo": "ASMR: FAVO DE MEL (eating sounds)",
             "url": "https://www.youtube.com/watch?v=3RoBIvmXmtE&t=128s"
         },
         {
             "id": 14,
-            "categoriaID": 3,
+            "categoriaId": 3,
             "titulo": "ASMR: ELIMINANDO SUA ENERGIA NEGATIVA!",
             "url": "https://www.youtube.com/watch?v=3RoBIvmXmtE&t=128s"
         },
         {
             "id": 15,
-            "categoriaID": 3,
+            "categoriaId": 3,
             "titulo": "ASMR - BANHO RELAXANTE (sons em camadas)",
             "url": "https://www.youtube.com/watch?v=pZK5wqODQJ4"
         },
         {
             "id": 16,
-            "categoriaID": 3,
+            "categoriaId": 3,
             "titulo": "ASMR - SUSSURRANDO ATÉ VOCÊ DORMIR!",
             "url": "https://www.youtube.com/watch?v=rhi1ew9i6HQ"
         },
         {
             "id": 17,
-            "categoriaID": 3,
+            "categoriaId": 3,
             "titulo": "ASMR - REVELANDO BARBIE SURPRESA! (BARBIE COLOR REVEAL)",
             "url": "https://www.youtube.com/watch?v=SVYtibq369c&t=1s"
         },
         {
             "id": 18,
-            "categoriaID": 3,
+            "categoriaId": 3,
             "titulo": "ASMR - RELAXAMENTO INTENSO NO SEUS OUVIDOS!",
             "url": "https://www.youtube.com/watch?v=f8K7LGBCQ_s&t=726s"
         },
         {
             "id": 19,
-            "categoriaID": 4,
+            "categoriaId": 4,
             "titulo": "ASMR 3DIO INTENSO - ENTRANDO NO SEU CÉREBRO",
             "url": "https://www.youtube.com/watch?v=gfyjo0SmoSE"
         },
         {
             "id": 20,
-            "categoriaID": 4,
+            "categoriaId": 4,
             "titulo": "ASMR 3DIO: MIX DE ARREPIOS ✨",
             "url": "https://www.youtube.com/watch?v=cWbzNMzkBiQ"
         },
         {
             "id": 21,
-            "categoriaID": 4,
+            "categoriaId": 4,
             "titulo": "ASMR LIVE 💖[PT-BR-EN] let me relax you 💖✨ !discord !sub",
             "url": "https://www.youtube.com/watch?v=2n1RNdrPXig&t=5s"
         },
         {
             "id": 22,
-            "categoriaID": 4,
+            "categoriaId": 4,
             "titulo": "ASMR 3DIO 1 HORA ♡ SUSSURROS RELAXANTES PARA SONO PROFUNDO E CURA: MOUTH SOUNDS AFIRMAÇÕES P/ DORMIR",
             "url": "https://www.youtube.com/watch?v=SPTHp9PSRWM"
         }
