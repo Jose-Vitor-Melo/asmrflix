@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../../components/PageDefault';
 import FormField from '../../../../components/FormField';
@@ -10,9 +10,7 @@ function CadastroCategoria() {
     descricao: '',
     cor: '',
   };
-
   const [categorias, setCategorias] = useState([]);
-
   const [values, setValues] = useState(valoresIniciais);
 
   function setValue(key, value) {
@@ -30,12 +28,23 @@ function CadastroCategoria() {
     ]);
     setValue(valoresIniciais);
   }
+
   function handlerChange(infOfEvent) {
     setValue(
       infOfEvent.target.getAttribute('name'),
       infOfEvent.target.value,
     );
   }
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categorias';
+    fetch(URL)
+      .then(async (respostaDoServer) => {
+        const resposta = await respostaDoServer.json();
+        setCategorias([
+          ...resposta,
+        ]);
+      });
+  });
 
   return (
     <PageDefault>
@@ -55,10 +64,9 @@ function CadastroCategoria() {
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <li key={`${categoria}${indice}`}>
-            {categoria.nome}
+        {categorias.map((categoria) => (
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
