@@ -12,7 +12,7 @@ function CadastroVideo() {
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
   const { handleChange, values } = useForm({
-    titulo: 'Video padrao',
+    titulo: 'Video Padrão',
     url: 'https://youtu.be/c8mVlakBESE',
     categoria: 'Front End',
   });
@@ -47,7 +47,7 @@ function CadastroVideo() {
         <FormField
           label="Titulo do video"
           name="titulo"
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
