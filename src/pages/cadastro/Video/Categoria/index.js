@@ -36,7 +36,7 @@ function CadastroCategoria() {
     );
   }
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = 'https://asmr-flix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (respostaDoServer) => {
         const resposta = await respostaDoServer.json();
