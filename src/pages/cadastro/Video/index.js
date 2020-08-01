@@ -46,7 +46,7 @@ function CadastroVideo() {
       >
         <FormField
           label="Titulo do video"
-          name="titutlo"
+          name="titulo"
           value={values.nome}
           onChange={handleChange}
         />
