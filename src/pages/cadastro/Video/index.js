@@ -14,7 +14,7 @@ function CadastroVideo() {
   const { handleChange, values } = useForm({
     titulo: 'Video Padrão',
     url: 'https://youtu.be/c8mVlakBESE',
-    categoria: 'Front End',
+    categoria: 'Sweet Carol',
   });
 
   useEffect(() => {

@@ -11,7 +11,7 @@ function create(objetoDoVideo) {
     body: JSON.stringify(objetoDoVideo)
   })
     .then(async (respostaDoServidor) => {
-      if (respostaDoServidor) {
+      if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
         return resposta;
       }
